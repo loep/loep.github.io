@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Loep [Monitoring Linux Events and Resources]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="images/Refresh.css" type="text/css" />
+</head>
+<body>
+<div id="wrap">
+  <div id="header">
+    <h1 id="logo-text">Loep.github.io<span class="gray"></span></h1>
+    <form class="search" method="post" action="#">
+      <p>
+        <input class="textbox" type="text" name="search_query" value="" />
+        <input class="button" type="submit" name="Submit" value="Search" />
+      </p>
+    </form>
+  </div>
+  <div  id="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="download.html">Download</a></li>
+      <li id="current"><a href="documentation.html">Documentation</a></li>
+      <li><a href="fa.html">بخش فارسی</a></li>
+    </ul>
+  </div>
+  <div id="content-wrap">
+    <div id="sidebar">
+      <h1>Loep Links</h1>
+      <div class="left-box">
+        <ul class="sidemenu">
+          <li><a target="_blank" href="#">Live Demo</a></li>
+          <li><a href="screenshots.html">Screenshots</a></li>
+          <li><a target="_blank" href="#TemplateInfo">Github account</a></li>
+          <li><a target="_blank" href="#TemplateInfo">Youtube page</a></li>
+
+        </ul>
+      </div>
+
+      <h1>FAQ</h1>
+      <div class="left-box">
+        <ul class="sidemenu">
+          <li><a href="#download">Download source code</a></li>
+          <li><a href="#extract">Extract master.zip</a></li>
+          <li><a href="#dependencies">Check dependencies</a></li>
+          <li><a href="#debian">Install dependencies</a></li>
+          <li><a href="#install">Install Loep</a></li>
+          <li><a href="#configuration">Configuration</a></li>
+          <li><a href="#update">Update Loep</a></li>
+          <li><a href="#uninstall">Uninstall Loep</a></li>
+        </ul>
+      </div>
+
+      <h1>Other Sites</h1>
+      <div class="left-box">
+        <ul class="sidemenu">
+          <li><a target="_blank" href="http://oslearn.ir">OSLearn Website</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="main">
+      
+      <h1>Documentation</h1>
+      <ul>
+<li><span><a href=#download>How to download source code</a></span></li>
+<li><span><a href=#extract>How to extract master.zip file</a></span></li>
+<li><span><a href=#dependencies>How to check dependencies</a></span></li>
+<li><span><a href=#debian>How to install dependencies on debian</a></span></li>
+<li><span><a href=#centos>How to install dependencies on centos</a></span></li>
+<li><span><a href=#install>How to install loep</a></span></li>
+<li><span><a href=#configuration>How to configuration loep</a></span></li>
+<li><span><a href=#update>How to update</a></span></li>
+<li><span><a href=#uninstall>How to uninstall loep</a></span></li>
+      </ul>
+      
+      
+    </div>
+
+    <div id="main"> <a name="download"></a>
+      <h1>How to download source code</h1>
+      <p>You can download source code from github or other mirror. Please visit <a target="_blank" href="download.html">Download</a> page.</p>
+	  <p><code>http://github.com/loep/ <br />
+	  http://github.com/loep/master.zip <br />
+	  http://loep.ir/loep/master.zip <br />
+	  http://oslearn.ir/loep/master.zip</code></p>
+    </div>
+
+    <div id="main"> <a name="extract"></a>
+      <h1>How to extract master.zip file</h1>
+	  <p>We using 'unzip' command in linux distributions :</p>
+	  <p><code>$ unzip master.zip</code></p>
+	  <p>Install 'unzip' in debian distribution :</p>
+	  <p><code># apt-get install unzip</code></p>
+	  <p>Install 'unzip' in centos distribution :</p>
+	  <p><code># yum install unzip</code></p>
+    </div>
+
+    <div id="main"> <a name="dependencies"></a>
+      <h1>How to check dependencies</h1>
+      <p>In the first step, set execute permission for install.sh :</p>
+	  <p><code># chmod +x install.sh</code></p>
+	  <p>Now, check dependencies using -c switch :</p>
+	  <p><code># ./install -c</code></p>
+    </div>
+
+    <div id="main"> <a name="debian"></a>
+      <h1>How to install dependencies on debian</h1>
+      <p>Using apt-get command. for example :</p>
+	<p><code># apt-get install curl</code></p>
+    </div>
+
+    <div id="main"> <a name="centos"></a>
+      <h1>How to install dependencies on centos</h1>
+      <p>Using yum command. for example :</p>
+	  <p><code># yum install iostat</code></p>
+    </div>
+
+    <div id="main"> <a name="install"></a>
+      <h1>How to install loep</h1>
+      <p>Using -i switch : </p>
+	  <p><code># ./install.sh -i</code></p>
+    </div>
+
+    <div id="main"> <a name="configuration"></a>
+      <h1>How to configuration loep</h1>
+      <p>3 config file exists in program's directory.</p>
+	  <p><strong>generall.conf : </strong>Change delay time for update html pages, Change number of greps and Change web server directory address</p>
+	  <p><strong>heartbeat.conf : </strong>write other devies ip address in this config file for uptime monitoring</p>
+	  <p><strong>interface.conf : </strong>Insert interfaces in this file for show bandwitch usage.</p>
+    </div>
+
+    <div id="main"> <a name="update"></a>
+      <h1>How to update</h1>
+      <p>Remove program and download new version and install.</p>
+    </div>
+
+    <div id="main"> <a name="uninstall"></a>
+      <h1>How to uninstall</h1>
+      <p>In the first step remove programs directory :</p>
+	  <p><code># rm -rf /opt/loep_v1.0/</code></p>
+	  <p>In the second step remove html page from webserver. for example we remove loep directory from webserver :</p>
+	  <p><code># rm -rf /var/www/html/loep/</code></p>
+	  <p>In the last step remove scripts from crontab file :</p>
+	  <p><code># nano /etc/crontab</code></p>
+    </div>
+
+
+
+  </div>
+  <div id="footer">
+    <p> &copy; 2016 <strong>Loep</strong> | Design by: <a href="http://www.styleshout.com/">styleshout</a></p>
+  </div>
+</div>
+</body>
+</html>

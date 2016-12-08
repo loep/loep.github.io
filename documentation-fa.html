@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Loep [Monitoring Linux Events and Resources]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="images/Refresh.fa.css" type="text/css" />
+</head>
+<body>
+<div id="wrap">
+  <div id="header">
+	<h1 id="logo-text">Loep.github.io<span class="gray"></span></h1>
+    <form class="search" method="post" action="#">
+      <p>
+        <input class="textbox" type="text" name="search_query" value="" />
+        <input class="button" type="submit" name="Submit" value="Search" />
+      </p>
+    </form>
+  </div>
+  <div  id="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="download.html">Download</a></li>
+      <li><a href="documentation.html">Documentation</a></li>
+      <li id="current"><a href="fa.html">بخش فارسی</a></li>
+    </ul>
+  </div>
+  <div id="content-wrap">
+    <div id="sidebar">
+      <h1>Loep Links</h1>
+      <div class="left-box">
+        <ul class="sidemenu">
+          <li><a target="_blank" href="#">Live Demo</a></li>
+          <li><a href="screenshots.html">Screenshots</a></li>
+          <li><a target="_blank" href="#TemplateInfo">Github account</a></li>
+          <li><a target="_blank" href="#TemplateInfo">Youtube page</a></li>
+
+        </ul>
+      </div>
+      <h1>FAQ</h1>
+      <div class="left-box">
+        <ul class="sidemenu">
+          <li><a href="#">Download source code</a></li>
+          <li><a href="#">Extract master.zip</a></li>
+          <li><a href="#">Check dependencies</a></li>
+          <li><a href="#">Install dependencies</a></li>
+          <li><a href="#">Install Loep</a></li>
+          <li><a href="#">Configuration</a></li>
+          <li><a href="#">Update Loep</a></li>
+          <li><a href="#">Uninstall Loep</a></li>
+        </ul>
+      </div>
+      <h1>Other Sites</h1>
+      <div class="left-box">
+        <ul class="sidemenu">
+          <li><a target="_blank" href="http://oslearn.ir">OSLearn Website</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="main"> <a name="TemplateInfo"></a>
+      <h1>مستندات</h1>
+	  <ul dir="rtl">
+<li><span><a href=#download>سورس برنامه را از کجا دانلود کنم ؟</a></span></li>
+<li><span><a href=#extract>چگونه فایل master.zip را از حالت فشرده خارج کنم ؟</a></span></li>
+<li><span><a href=#dependencies>چگونه پیش نیاز ها را بر روی سیستم بررسی کنم ؟</a></span></li>
+<li><span><a href=#debian>نحوه نصب پیش نیاز ها بر روی debian به چه شکل است ؟</a></span></li>
+<li><span><a href=#centos>نحوه نصب پیش نیاز ها بر روی centos به چه شکل است ؟</a></span></li>
+<li><span><a href=#install>چگونه برنامه را نصب کنم ؟</a></span></li>
+<li><span><a href=#configuration>چگونه برنامه را پیکربندی کنم ؟</a></span></li>
+<li><span><a href=#update>چگونه برنامه را آپدیت کنم ؟</a></span></li>
+<li><span><a href=#uninstall>چگونه برنامه را پاک کنم ؟</a></span></li>
+</ul>
+
+<h1>سورس برنامه را از کجا دانلود کنم ؟</h1> <a name="download"></a>
+<p style = "direction: rtl;" >
+سورس برنامه بر روی گیت هاب منتشر شده است. همچنین می توان از یکی از لینک های زیر استفاده کرد.
+</p>
+<p>
+<code>http://github.com/loep/ <br />
+http://github.com/loep/master.zip <br />
+http://loep.ir/loep/master.zip <br />
+http://oslearn.ir/loep/master.zip</code>
+</p>
+<h1 dir="rtl">چگونه فایل master.zip را از حالت فشرده خارج کنم ؟</h1> <a name="extract"></a>
+<p style = "direction: rtl;" >
+ما از دستور unzip در سیستم عامل لینوکس استفاده می کنیم
+</p>
+<p><code>$ unzip master.zip</code></p>
+<p style = "direction: rtl;" >
+نصب بر روی توزیع debian :
+</p>
+<p><code># apt-get install unzip</code></p>
+<p style = "direction: rtl;" >
+نصب بر روی توزیع centos :
+</p>
+<p><code># yum install unzip</code></p>
+<h1 dir="rtl">چگونه پیش نیاز ها را بر روی سیستم بررسی کنم ؟</h1> <a name="dependencies"></a>
+<p style = "direction: rtl;" >
+ابتدا پرمیشن اجرایی برای install.sh در نظر می گیریم :
+</p>
+<p><code># chmod +x install.sh</code></p>
+<p style = "direction: rtl;" >
+سپس با استفاده از سویچ c- پیش نیاز ها را بررسی می کنیم :
+</p>
+<p><code># ./install -c</code></p>
+<h1 dir="rtl">نحوه نصب پیش نیاز ها بر روی debian به چه شکل است ؟</h1> <a name="debian"></a>
+<p style = "direction: rtl;" >
+با استفاده از دستور apt-get . به عنوان مثال :
+</p>
+<p><code># apt-get install curl</code></p>
+<h1 dir="rtl">نحوه نصب پیش نیاز ها بر روی centos به چه شکل است ؟</h1> <a name="centos"></a>
+<p style = "direction: rtl;" >
+با استفاده از دستور yum . به عنوان مثال :
+</p>
+<p><code># yum install curl</code></p>
+<h1 dir="rtl">چگونه برنامه را نصب کنم ؟</h1> name="install"></a>
+<p style = "direction: rtl;" >
+با استفاده از سویچ i- :
+</p>
+<p><code># ./install -i</code></p>
+<h1 dir="rtl">چگونه برنامه را پیکربندی کنم ؟</h1> <a name="configuration"></a>
+<p style = "direction: rtl;" >
+۳ فایل کانفیگ در پوشه برنامه وجود دارد.
+</p>
+<p style = "direction: rtl;" >
+<strong>فایل generall.conf : </strong> جهت تعیین زمان بروز رسانی صفحات html، تعداد خطوط خوانده شده در لاگ ها و همچنین آدرس پوشه وب سرور. به عنوان مثال :
+</p>
+<p style = "direction: rtl;" >
+<strong>لطفا توجه داشته باشید که شکل کلی فایل کانفیگ نباید تغییر کند.</strong>
+</p>
+<p style = "direction: rtl;" >
+		<strong>فایل interface.conf : </strong> جهت مانیتورینگ ترافیک مصرفی سرور، نام کارت های شبکه سرور را داخل این فایل وارد کنید. به عنوان مثال :
+</p>
+<p style = "direction: rtl;" >
+		<strong>فایل heartbeat.conf : </strong> جهت مانیتورینگ آپتایم دیگر سرور ها و یا دیوایس، آدرس آی پی آن ها را داخل این فایل وارد کنید. به عنوان مثال :
+</p>
+<h1 dir="rtl">چگونه برنامه را آپدیت کنم ؟</h1> <a name="update"></a>
+<p style = "direction: rtl;" >
+ابتدا برنامه را به صورت کامل پاک کنید. سپس ورژن جدید را دانلود و نصب کنید.
+</p>
+<h1 dir="rtl">چگونه برنامه را پاک کنم ؟</h1> <a name="uninstall"></a>
+<p style = "direction: rtl;" >
+ابتدا دایرکتوری اصلی برنامه را پاک کنید :
+</p>
+<p><code># rm -rf /opt/loep_v1.0/</code></p>
+<p style = "direction: rtl;" >
+سپس دایرکتوری ای که فایل های html در آن قرار دارد را پاک کنید. به عنوان مثال :
+</p>
+<p><code># rm -rf /var/www/html/loep/</code></p>
+<p style = "direction: rtl;" >
+در آخر اسکریپت ها را از داخل فایل crontab پاک کنید.
+</p>
+<p><code># nano /etc/crontab</code></p>
+<br>
+</div>
+</div>
+<div id="footer">
+<p> &copy; 2016 <strong>Loep</strong> | Design by: <a href="http://www.styleshout.com/">styleshout</a></p>
+</div>
+</div>
+</body>
+</html>
