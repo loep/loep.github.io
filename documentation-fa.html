@@ -26,33 +26,34 @@
   </div>
   <div id="content-wrap">
     <div id="sidebar">
-      <h1>Loep Links</h1>
+      <h1>Links</h1>
       <div class="left-box">
         <ul class="sidemenu">
-          <li><a target="_blank" href="#">Live Demo</a></li>
+          <li><a target="_blank" href="http://demo.loep.ir/">Live Demo</a></li>
           <li><a href="screenshots.html">Screenshots</a></li>
-          <li><a target="_blank" href="#TemplateInfo">Github account</a></li>
-          <li><a target="_blank" href="#TemplateInfo">Youtube page</a></li>
-
+          <li><a target="_blank" href="https://github.com/loep/">Github account</a></li>
+          <li><a target="_blank" href="#">Youtube channel</a></li>
+		  <li><a target="_blank" href="documentation-fa.html">Persian documentation</a></li>
         </ul>
       </div>
       <h1>FAQ</h1>
       <div class="left-box">
         <ul class="sidemenu">
-          <li><a href="#">Download source code</a></li>
-          <li><a href="#">Extract master.zip</a></li>
-          <li><a href="#">Check dependencies</a></li>
-          <li><a href="#">Install dependencies</a></li>
-          <li><a href="#">Install Loep</a></li>
-          <li><a href="#">Configuration</a></li>
-          <li><a href="#">Update Loep</a></li>
-          <li><a href="#">Uninstall Loep</a></li>
+          <li><a href="documentation.html#download">Download source code</a></li>
+          <li><a href="documentation.html#extract">Extract master.zip</a></li>
+          <li><a href="documentation.html#dependencies">Check dependencies</a></li>
+          <li><a href="documentation.html#debian">Install dependencies</a></li>
+          <li><a href="documentation.html#install">Install Loep</a></li>
+          <li><a href="documentation.html#configuration">Configuration</a></li>
+          <li><a href="documentation.html#update">Update Loep</a></li>
+          <li><a href="documentation.html#uninstall">Uninstall Loep</a></li>
         </ul>
       </div>
       <h1>Other Sites</h1>
       <div class="left-box">
         <ul class="sidemenu">
-          <li><a target="_blank" href="http://oslearn.ir">OSLearn Website</a></li>
+          <li><a target="_blank" href="http://oslearn.ir">OSLearn.ir</a></li>
+		  <li><a target="_blank" href="http://loep.ir">Loep.ir</a></li>
         </ul>
       </div>
     </div>
@@ -72,7 +73,7 @@
 
 <h1>سورس برنامه را از کجا دانلود کنم ؟</h1> <a name="download"></a>
 <p style = "direction: rtl;" >
-سورس برنامه بر روی گیت هاب منتشر شده است. همچنین می توان از یکی از لینک های زیر استفاده کرد.
+سورس برنامه بر روی گیت هاب منتشر شده است. همچنین می توان از لینک های زیر استفاده کرد :
 </p>
 <p>
 <code>http://github.com/loep/ <br />
@@ -82,7 +83,7 @@ http://oslearn.ir/loep/master.zip</code>
 </p>
 <h1 dir="rtl">چگونه فایل master.zip را از حالت فشرده خارج کنم ؟</h1> <a name="extract"></a>
 <p style = "direction: rtl;" >
-ما از دستور unzip در سیستم عامل لینوکس استفاده می کنیم
+ما از دستور unzip در سیستم عامل لینوکس استفاده می کنیم :
 </p>
 <p><code>$ unzip master.zip</code></p>
 <p style = "direction: rtl;" >
@@ -112,17 +113,17 @@ http://oslearn.ir/loep/master.zip</code>
 با استفاده از دستور yum . به عنوان مثال :
 </p>
 <p><code># yum install curl</code></p>
-<h1 dir="rtl">چگونه برنامه را نصب کنم ؟</h1> name="install"></a>
+<h1 dir="rtl">چگونه برنامه را نصب کنم ؟</h1> <aname="install"></a>
 <p style = "direction: rtl;" >
 با استفاده از سویچ i- :
 </p>
 <p><code># ./install -i</code></p>
 <h1 dir="rtl">چگونه برنامه را پیکربندی کنم ؟</h1> <a name="configuration"></a>
 <p style = "direction: rtl;" >
-۳ فایل کانفیگ در پوشه برنامه وجود دارد.
+۳ فایل کانفیگ در دایرکتوری برنامه وجود دارد.
 </p>
 <p style = "direction: rtl;" >
-<strong>فایل generall.conf : </strong> جهت تعیین زمان بروز رسانی صفحات html، تعداد خطوط خوانده شده در لاگ ها و همچنین آدرس پوشه وب سرور. به عنوان مثال :
+<strong>فایل generall.conf : </strong> جهت تعیین یا تغییر زمان بروز رسانی صفحات html، تعداد خطوط خوانده شده در لاگ ها و همچنین آدرس دایرکتوری وب سرور. به عنوان مثال :
 </p>
 <p style = "direction: rtl;" >
 <strong>لطفا توجه داشته باشید که شکل کلی فایل کانفیگ نباید تغییر کند.</strong>
@@ -131,11 +132,11 @@ http://oslearn.ir/loep/master.zip</code>
 		<strong>فایل interface.conf : </strong> جهت مانیتورینگ ترافیک مصرفی سرور، نام کارت های شبکه سرور را داخل این فایل وارد کنید. به عنوان مثال :
 </p>
 <p style = "direction: rtl;" >
-		<strong>فایل heartbeat.conf : </strong> جهت مانیتورینگ آپتایم دیگر سرور ها و یا دیوایس، آدرس آی پی آن ها را داخل این فایل وارد کنید. به عنوان مثال :
+		<strong>فایل heartbeat.conf : </strong> جهت مانیتورینگ آپتایم دیگر سرور ها و یا دیوایس ها، آدرس آی پی آن ها را داخل این فایل وارد کنید. به عنوان مثال :
 </p>
 <h1 dir="rtl">چگونه برنامه را آپدیت کنم ؟</h1> <a name="update"></a>
 <p style = "direction: rtl;" >
-ابتدا برنامه را به صورت کامل پاک کنید. سپس ورژن جدید را دانلود و نصب کنید.
+مطابق با همین راهنما، ابتدا برنامه را به صورت کامل پاک کنید. سپس ورژن جدید را دانلود و نصب کنید.
 </p>
 <h1 dir="rtl">چگونه برنامه را پاک کنم ؟</h1> <a name="uninstall"></a>
 <p style = "direction: rtl;" >
@@ -147,14 +148,14 @@ http://oslearn.ir/loep/master.zip</code>
 </p>
 <p><code># rm -rf /var/www/html/loep/</code></p>
 <p style = "direction: rtl;" >
-در آخر اسکریپت ها را از داخل فایل crontab پاک کنید.
+در آخر اسکریپت ها را از داخل فایل crontab پاک کنید :
 </p>
 <p><code># nano /etc/crontab</code></p>
 <br>
 </div>
 </div>
 <div id="footer">
-<p> &copy; 2016 <strong>Loep</strong> | Design by: <a href="http://www.styleshout.com/">styleshout</a></p>
+<p> &copy; 2016 <strong>Loep</strong> | e2ma3n@Gmail.com | Design by: <a href="http://www.styleshout.com/">styleshout</a></p>
 </div>
 </div>
 </body>
