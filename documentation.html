@@ -26,14 +26,14 @@
   </div>
   <div id="content-wrap">
     <div id="sidebar">
-      <h1>Loep Links</h1>
+      <h1>Links</h1>
       <div class="left-box">
         <ul class="sidemenu">
-          <li><a target="_blank" href="#">Live Demo</a></li>
+          <li><a target="_blank" href="http://demo.loep.ir/">Live Demo</a></li>
           <li><a href="screenshots.html">Screenshots</a></li>
-          <li><a target="_blank" href="#TemplateInfo">Github account</a></li>
-          <li><a target="_blank" href="#TemplateInfo">Youtube page</a></li>
-
+          <li><a target="_blank" href="https://github.com/loep/">Github account</a></li>
+          <li><a target="_blank" href="#">Youtube channel</a></li>
+		  <li><a target="_blank" href="documentation-fa.html">Persian documentation</a></li>
         </ul>
       </div>
 
@@ -54,7 +54,8 @@
       <h1>Other Sites</h1>
       <div class="left-box">
         <ul class="sidemenu">
-          <li><a target="_blank" href="http://oslearn.ir">OSLearn Website</a></li>
+          <li><a target="_blank" href="http://oslearn.ir">OSLearn.ir</a></li>
+		  <li><a target="_blank" href="http://loep.ir">Loep.ir</a></li>
         </ul>
       </div>
     </div>
@@ -69,7 +70,7 @@
 <li><span><a href=#centos>How to install dependencies on centos</a></span></li>
 <li><span><a href=#install>How to install loep</a></span></li>
 <li><span><a href=#configuration>How to configuration loep</a></span></li>
-<li><span><a href=#update>How to update</a></span></li>
+<li><span><a href=#update>How to update loep</a></span></li>
 <li><span><a href=#uninstall>How to uninstall loep</a></span></li>
       </ul>
       
@@ -77,8 +78,8 @@
     </div>
 
     <div id="main"> <a name="download"></a>
-      <h1>How to download source code</h1>
-      <p>You can download source code from github or other mirror. Please visit <a target="_blank" href="download.html">Download</a> page.</p>
+      <h1>How to download source code ?</h1>
+      <p>You can download source code from github or other mirror. Please visit <a target="_blank" href="download.html">download</a> page.</p>
 	  <p><code>http://github.com/loep/ <br />
 	  http://github.com/loep/master.zip <br />
 	  http://loep.ir/loep/master.zip <br />
@@ -86,8 +87,8 @@
     </div>
 
     <div id="main"> <a name="extract"></a>
-      <h1>How to extract master.zip file</h1>
-	  <p>We using 'unzip' command in linux distributions :</p>
+      <h1>How to extract master.zip file ?</h1>
+	  <p>We use 'unzip' command in linux distributions :</p>
 	  <p><code>$ unzip master.zip</code></p>
 	  <p>Install 'unzip' in debian distribution :</p>
 	  <p><code># apt-get install unzip</code></p>
@@ -96,51 +97,74 @@
     </div>
 
     <div id="main"> <a name="dependencies"></a>
-      <h1>How to check dependencies</h1>
+      <h1>How to check dependencies on system ?</h1>
       <p>In the first step, set execute permission for install.sh :</p>
 	  <p><code># chmod +x install.sh</code></p>
-	  <p>Now, check dependencies using -c switch :</p>
+	  <p>Then, check dependencies, using -c switch :</p>
 	  <p><code># ./install -c</code></p>
     </div>
 
     <div id="main"> <a name="debian"></a>
-      <h1>How to install dependencies on debian</h1>
-      <p>Using apt-get command. for example :</p>
-	<p><code># apt-get install curl</code></p>
+      <h1>How to install dependencies on debian ?</h1>
+      <p>By using apt-get command; for example :</p>
+	<p><code># apt-get install sysstat<br />
+	# apt-get install free<br />
+	# apt-get install users<br />
+	# apt-get install rev<br />
+	# apt-get install expr<br />
+	# apt-get install ifconfig<br />
+	# apt-get install curl<br />
+	# apt-get install wget<br />
+	# apt-get install bc<br />
+	# apt-get install unzip<br />
+	# apt-get install uptime<br />
+	</code></p>
     </div>
 
     <div id="main"> <a name="centos"></a>
-      <h1>How to install dependencies on centos</h1>
-      <p>Using yum command. for example :</p>
-	  <p><code># yum install iostat</code></p>
+      <h1>How to install dependencies on centos ?</h1>
+      <p>By using yum command; for example :</p>
+	  <p><code># yum install sysstat<br />
+	# yum install free<br />
+	# yum install users<br />
+	# yum install rev<br />
+	# yum install expr<br />
+	# yum install ifconfig<br />
+	# yum install curl<br />
+	# yum install wget<br />
+	# yum install bc<br />
+	# yum install unzip<br />
+	# yum install uptime<br />
+	</code></p>
     </div>
 
     <div id="main"> <a name="install"></a>
-      <h1>How to install loep</h1>
-      <p>Using -i switch : </p>
+      <h1>How to install loep ?</h1>
+      <p>By using -i switch : </p>
 	  <p><code># ./install.sh -i</code></p>
     </div>
 
     <div id="main"> <a name="configuration"></a>
-      <h1>How to configuration loep</h1>
-      <p>3 config file exists in program's directory.</p>
-	  <p><strong>generall.conf : </strong>Change delay time for update html pages, Change number of greps and Change web server directory address</p>
-	  <p><strong>heartbeat.conf : </strong>write other devies ip address in this config file for uptime monitoring</p>
-	  <p><strong>interface.conf : </strong>Insert interfaces in this file for show bandwitch usage.</p>
+      <h1>How to configuration loep ?</h1>
+      <p>There are 3 files of config existing in program's directory.</p>
+	  <p><strong>generall.conf : </strong>For changing delay time in html pages, Changing number of lines read in logs and also changing web server's directory address. For example :</p>
+<p><strong>Please pay attention that, the form of config file does not change.</strong></p>
+	  <p><strong>interface.conf : </strong> For monitoring bandwitch teraffic, Insert interfaces inside this file, For example :</p>
+	  <p><strong>heartbeat.conf : </strong>For uptime monitoring in other servers or devices, Insert ip addresses in this file, For example :</p>
     </div>
 
     <div id="main"> <a name="update"></a>
-      <h1>How to update</h1>
-      <p>Remove program and download new version and install.</p>
+      <h1>How to update loep ?</h1>
+      <p>Remove program and download new version and then install.</p>
     </div>
 
     <div id="main"> <a name="uninstall"></a>
-      <h1>How to uninstall</h1>
-      <p>In the first step remove programs directory :</p>
+      <h1>How to uninstall loep ?</h1>
+      <p>First step, Remove program's directory :</p>
 	  <p><code># rm -rf /opt/loep_v1.0/</code></p>
-	  <p>In the second step remove html page from webserver. for example we remove loep directory from webserver :</p>
+	  <p>Next step, Remove program's html pages from webserver. for example we remove loep directory from webserver :</p>
 	  <p><code># rm -rf /var/www/html/loep/</code></p>
-	  <p>In the last step remove scripts from crontab file :</p>
+	  <p>At last, remove scripts from crontab file :</p>
 	  <p><code># nano /etc/crontab</code></p>
     </div>
 
@@ -148,7 +172,7 @@
 
   </div>
   <div id="footer">
-    <p> &copy; 2016 <strong>Loep</strong> | Design by: <a href="http://www.styleshout.com/">styleshout</a></p>
+    <p> &copy; 2016 <strong>Loep</strong> | e2ma3n@Gmail.com | Design by: <a href="http://www.styleshout.com/">styleshout</a></p>
   </div>
 </div>
 </body>
