@@ -41,7 +41,7 @@
       <div class="left-box">
         <ul class="sidemenu">
           <li><a href="#download">Download source code</a></li>
-          <li><a href="#extract">Extract master.zip</a></li>
+          <li><a href="#extract">Install git on system</a></li>
           <li><a href="#dependencies">Check dependencies</a></li>
           <li><a href="#debian">Install dependencies</a></li>
           <li><a href="#install">Install Loep</a></li>
@@ -64,7 +64,7 @@
       <h1>Documentation</h1>
       <ul>
 <li><span><a href=#download>How to download source code</a></span></li>
-<li><span><a href=#extract>How to extract master.zip file</a></span></li>
+<li><span><a href=#extract>How to install git on system</a></span></li>
 <li><span><a href=#dependencies>How to check dependencies</a></span></li>
 <li><span><a href=#debian>How to install dependencies on debian</a></span></li>
 <li><span><a href=#centos>How to install dependencies on centos</a></span></li>
@@ -79,18 +79,17 @@
 
     <div id="main"> <a name="download"></a>
       <h1>How to download source code ?</h1>
-      <p>You can download source code from github or other mirror. Please visit <a target="_blank" href="download.html">download</a> page.</p>
-	  <p><code>https://github.com/loep/loep/archive/master.zip</code></p>
+	    <p>You can download and view source code from github : <a target="_blank" href="https://github.com/loep/loep/">https://github.com/loep/loep/</a></p>
+	    <p>Also to get the latest source code, run following command:</p>
+	  <p><code># git clone https://github.com/loep/loep.git</code></p>
     </div>
 
-    <div id="main"> <a name="extract"></a>
-      <h1>How to extract master.zip file ?</h1>
-	  <p>We use 'unzip' command in linux distributions :</p>
-	  <p><code>$ unzip master.zip</code></p>
-	  <p>Install 'unzip' in debian distribution :</p>
-	  <p><code># apt-get install unzip</code></p>
-	  <p>Install 'unzip' in centos distribution :</p>
-	  <p><code># yum install unzip</code></p>
+    <div id="main"> <a name="git"></a>
+      <h1>How to install git on system</h1>
+	  <p>Install Git with apt-get in one command on debian :</p>
+	  <p><code># apt-get install git-core</code></p>
+	  <p>Install Git with yum in one command on centos :</p>
+	  <p><code># yum install git</code></p>
     </div>
 
     <div id="main"> <a name="dependencies"></a>
